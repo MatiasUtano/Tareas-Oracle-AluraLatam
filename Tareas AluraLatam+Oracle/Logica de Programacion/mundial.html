@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNDIAL</title>
+</head>
+<body>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+        }
+
+        var anioMundial =  1930;
+        var limite = parseInt(prompt("Ingrese el año limite para calcular: "));
+
+        while(anioMundial < limite){
+        
+        imprimir("Hubo Mundial de la FIFA en el año: " + anioMundial);
+        anioMundial = anioMundial + 4;
+
+        }
+        imprimir("Fin");
+    </script>
+</body>
+</html>

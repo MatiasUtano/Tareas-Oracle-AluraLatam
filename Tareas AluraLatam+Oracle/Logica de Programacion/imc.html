@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>CALCULAR IMC</h1>
+
+    <script>
+        /*function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+        }
+
+        function calcularImc(peso, altura, nombre){
+            imc = peso / (altura * altura);
+            imprimir("El IMC calculado de " + nombre + " es " + imc);
+        }
+
+        var altura = 1.69;
+        var peso = 66.5;
+        var nombre = "Matias";
+        calcularImc(peso, altura, nombre);*/
+
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+        }
+
+        /*function calcularImc(peso, altura){
+            
+            return (peso / (altura * altura));
+
+        }
+
+        var persona1 = calcularImc(67, 1.69);
+        var persona2 = calcularImc(90, 1.68);
+        var promedio = (persona1 + persona2)/2;
+
+        imprimir("El promedio de ambas personas es de: " + promedio);*/
+
+
+        var pesoInformado = parseInt(prompt("Ingrese su Peso"));
+        console.log(pesoInformado);
+        var alturaInformado = parseFloat(prompt("Ingrese su Altura"));
+        console.log(alturaInformado);
+        var imcInformado = (pesoInformado / (alturaInformado * alturaInformado));
+        console.log(imcInformado);
+        imprimir("el IMC calculado es de: " + imcInformado);
+
+        if(imcInformado < 18.5){
+            imprimir("Su clasificacion de IMC es de Insuficiencia ponderal");
+        }else if(imcInformado >= 18.5 && imcInformado <= 24.9){
+            imprimir("Su clasificacion de IMC es de Intervalo Normal");
+        }else if(imcInformado = 25){
+            imprimir("Su clasificacion de IMC es de Sobrepeso");
+        }else if(imcInformado > 25 && imcInformado <= 29.9){
+            imprimir("Su clasificacion de IMC es de Preobesidad");
+        }else if(imcInformado > 30){
+            imprimir("Su clasificacion de IMC es de Obesidad");
+        }
+
+    </script>
+</body>
+</html>
